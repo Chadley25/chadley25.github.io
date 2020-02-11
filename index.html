@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bradley Chavis</title>
+<link rel="icon" href="Tab-Icon.png">
+<link rel="stylesheet" href="styles.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.up-arrow').click(function(){
+			$("html, body").animate({ scrollTop: 0 }, 500);
+        	return false;
+    	});
+	});
+</script>
+</head>
+
+<body>
+<div class="header">
+	<p class="title">Bradley Chavis</p>
+	<div class="header-right">
+		<a href="#" class="active">Main</a>
+		<a href="#">Portfolio</a>
+		<a href="#">Contact</a>
+	</div>
+</div>
+<div class="middle_spacing">
+</div>
+<div class="footer">
+	<div class="section1">
+		<img class="up-arrow-bg" src="images/Up-Arrow-BG.png" alt="Up Arrow Background">
+		<img class="up-arrow" src="images/Up-Arrow.png" alt="Up Arrow Icon">
+		<div class="logos">
+			<a href="#" target="_blank"><img src="images/FB-Logo.png" class="logo" alt="Facebook Logo Icon"></a>
+			<a href="#" target="_blank"><img src="images/Insta-Logo.png" class="logo" alt="Instagram Logo Icon"></a>
+			<a href="#" target="_blank"><img src="images/Twitter-Logo.png" class="logo" alt="Twitter Logo Icon"></a>
+		</div>
+		<div class="links">
+			<a href="onecolumn.html">Main</a>
+			<a href="twocolumn.html">Portfolio</a>
+			<a href="threecolumn.html">Contact</a>
+		</div>
+	</div>
+	<div class="section2">
+		<p class="website-slogan">BRADLEY'S PORTFOLIO & LINKS WEBSITE</p>
+		<p class="copyright-info">&copy; BRADLEY CHAVIS, 2020 | ALL RIGHTS RESERVED</p>
+	</div>
+</div>
+</body>
+</html>
