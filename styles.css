@@ -54,29 +54,42 @@
 	.header .header-right a.active {
 		color: #000000;
 	}
-/* Column Styles */
+/* Main Content Styles */
 	.middle_spacing {
 		height: 600px;
 	}
-	.main_column {
+/* About Styles */
+	.about {
+		width: 70%;
+		margin: 4% 13%;
+		padding: 2%;
+		background-color: #ffffff;
+		box-shadow: 0 0 10px 0 #000000;
+	}
+	.about .const_title {
+		text-align: center;
+		font-weight: bolder;
+		font-size: 40px;
+	}
+	.about img.pfp {
+		float: left;
+		height: 95px;
+        margin: 12px 15px 10px 10px;
+	}
+	.about p {
+		line-height: 2.5;
+		text-align: justify;
+    }
+/* Portfolio Styles */
+	.portfolio {
 		width: 88%;
 		margin: 4%;
 		padding: 2%;
 		background-color: #ffffff;
 		box-shadow: 0 0 10px 0 #000000;
 	}
-	.main_column .title {
-		color: #000000;
-		font-size: 40px;
-		margin: 15px 0 100px 0;
-		text-align: center;
-	}
-	.main_column p {
-		color: #000000;
-	}
-/* Portfolio Styles */
 	.portfolio .portfolio_item {
-		width: 70%;
+		width: 60%;
 		margin: 50px auto 90px auto;
 	}
 	.portfolio .port_title {
@@ -93,6 +106,41 @@
 		width: 95%;
 		text-align: justify;
 		margin: 20px auto 0 auto;
+	}
+/* Contact Styles */
+	.contact {
+		width: 40%;
+		margin: 4% 28%;
+		padding: 2%;
+		background-color: #ffffff;
+		box-shadow: 0 0 10px 0 #000000;
+	}
+	.contact .title {
+		color: #000000;
+		font-size: 40px;
+		margin: 15px 0 100px 0;
+		text-align: center;
+	}
+	.contact input {
+		margin: 0 0 2% 0;
+	}
+	.contact .input_text {
+		margin: 0 0 5px 0;
+	}
+	.contact textarea {
+		resize: none;
+		width: 200px;
+		padding: 5px;
+	}
+	.contact button {
+		display: block;
+		margin: 30px 0 0 0;
+	}
+	#form_submit_true {
+		transition: 2s;
+		margin: 20px 0 0 0;
+		color: green;
+		display: none;
 	}
 /* Footer Styles */
 	.footer {
