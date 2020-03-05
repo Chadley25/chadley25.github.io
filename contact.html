@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bradley Chavis - Contact</title>
+<link rel="icon" href="Tab-Icon.png">
+<link rel="stylesheet" href="styles.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.up-arrow').click(function(){
+			$("html, body").animate({ scrollTop: 0 }, 500);
+        	return false;
+    	});
+	});
+	function submitForm() {
+		var elements = document.getElementsByTagName("input");
+		for (var ii=0; ii < elements.length; ii++) {
+			elements[ii].value = "";
+		}
+		var elements = document.getElementsByTagName("textarea");
+		for (var ii=0; ii < elements.length; ii++) {
+			elements[ii].value = "";
+		}
+		document.getElementById("form_submit_true").style.display = "block";
+		setTimeout(removeSubmitTrueText, 9000);
+	}
+	function removeSubmitTrueText() {
+		document.getElementById("form_submit_true").style.display = "none";
+	}
+</script>
+</head>
+
+<body>
+<div class="header">
+	<p class="title">Bradley Chavis</p>
+	<div class="header-right">
+		<a href="index.html">Main</a>
+		<a href="portfolio.html">Portfolio</a>
+		<a href="contact.html" class="active">Contact</a>
+	</div>
+</div>
+<div class="main_column contact">
+	<p class="title">Contact Me!</p>
+	<p class="input_text">Name</p>
+	<input type="text" class="myInput"></input>
+	<p class="input_text">Email Address</p>
+	<input type="email"></input>
+	<p class="input_text">Message</p>
+	<textarea rows="5" placeholder="Enter message here..." maxlength="250"></textarea>
+	<button onclick="submitForm()">Submit</button>
+	<p id="form_submit_true">Form Successfully Submitted!</p>
+</div>
+<div class="footer">
+	<div class="section1">
+		<img class="up-arrow-bg" src="images/Up-Arrow-BG.png" alt="Up Arrow Background">
+		<img class="up-arrow" src="images/Up-Arrow.png" alt="Up Arrow Icon">
+		<div class="logos">
+			<a href="https://github.com/Chadley25" target="_blank"><img src="images/Github-Logo.png" class="logo" alt="Github Logo Icon"></a>
+			<a href="https://www.linkedin.com/in/bradleychavis/" target="_blank"><img src="images/Linkedin-Logo.png" class="logo" alt="Linkedin Logo Icon"></a>
+			<a href="mailto: BradleyChavis25@gmail.com"><img src="images/Email-Logo.png" class="logo" alt="Email Logo Icon"></a>
+		</div>
+		<div class="links">
+			<a href="index.html">Main</a>
+			<a href="portfolio.html">Portfolio</a>
+			<a href="contact.html">Contact</a>
+		</div>
+	</div>
+	<div class="section2">
+		<p class="website-slogan">BRADLEY'S PORTFOLIO & CONTACT WEBSITE</p>
+		<p class="copyright-info">&copy; BRADLEY CHAVIS, 2020 | ALL RIGHTS RESERVED</p>
+	</div>
+</div>
+</body>
+</html>
