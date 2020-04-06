@@ -66,11 +66,6 @@
 		background-color: #ffffff;
 		box-shadow: 0 0 10px 0 #000000;
 	}
-	.about .const_title {
-		text-align: center;
-		font-weight: bolder;
-		font-size: 40px;
-	}
 	.about img.pfp {
 		float: left;
 		height: 95px;
@@ -106,6 +101,70 @@
 		width: 95%;
 		text-align: justify;
 		margin: 20px auto 0 auto;
+	}
+/* H@xc0rd Styles */
+	.haxcord {
+		width: 70%;
+		margin: 4% 13%;
+		padding: 2%;
+		background-color: #ffffff;
+		box-shadow: 0 0 10px 0 #000000;
+	}
+	.haxcord .hax_title {
+		text-align: center;
+		font-weight: bold;
+		font-size: 70px;
+	}
+	.haxcord .hax_subtitle {
+		text-align: center;
+		font-size: 25px;
+		margin: 0 0 1% 0;
+	}
+	.haxcord .hax_logo {
+		display: block;
+		margin: 0 auto 1% auto;
+		width: 200px;
+	}
+	.haxcord .hax_desc {
+		text-align: justify;
+	}
+	.hax_download {
+		position: relative;
+		display: inline-block;
+		border-bottom: 1px dotted black;
+	}
+	.hax_download a {
+		text-decoration: none;
+		color: black;
+	}
+	.hax_download .tooltiptext {
+		visibility: hidden;
+		width: 190px;
+		background-color: black;
+		color: #fff;
+		text-align: center;
+		border-radius: 6px;
+		padding: 5px 0;
+		position: absolute;
+		z-index: 1;
+		top: -5px;
+		left: 120%;
+	}  
+	.hax_download .tooltiptext::after {
+		content: "";
+		position: absolute;
+		top: 50%;
+		right: 100%;
+		margin-top: -5px;
+		border-width: 5px;
+		border-style: solid;
+		border-color: transparent black transparent transparent;
+	}
+	.hax_download:hover .tooltiptext {
+		visibility: visible;
+	}
+	.hax_download:hover {
+		cursor: pointer;
 	}
 /* Contact Styles */
 	.contact {
@@ -325,4 +384,18 @@
 			display: none;
 		}
 	}
-
+	@media only screen and (max-width: 550px) {
+		.haxcord .hax_title {
+			font-size: 40px;
+		}
+		.haxcord .hax_subtitle {
+			text-align: center;
+			font-size: 20px;
+			margin: 0 0 1% 0;
+		}
+		.haxcord .hax_logo {
+			display: block;
+			margin: 0 auto 1% auto;
+			width: 100px;
+		}
+	}
