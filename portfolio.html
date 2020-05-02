@@ -5,13 +5,25 @@
 <title>Bradley Chavis - Portfolio</title>
 <link rel="icon" href="Tab-Icon.png">
 <link rel="stylesheet" href="styles.css" type="text/css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
 	$(document).ready(function(){
 		$('.up-arrow').click(function(){
 			$("html, body").animate({ scrollTop: 0 }, 500);
         	return false;
     	});
+		$("#nsButton").click(function(){
+			$("#nsButton").css("border-radius", "0px")
+			$("#csButton").css("border-radius", "30px")
+			$("#nsContent").show(2500)
+			$("#csContent").hide(2500)
+	  	});
+		$("#csButton").click(function(){
+			$("#nsButton").css("border-radius", "30px")
+			$("#csButton").css("border-radius", "0px")
+			$("#nsContent").hide(2500)
+			$("#csContent").show(2500)
+	  	});
 	});
 </script>
 </head>
@@ -26,20 +38,50 @@
 		<a href="contact.html">Contact</a>
 	</div>
 </div>
-<div class="main_column portfolio">
-	<div class="portfolio_item">
-		<p class="port_title">Portfolio Item #1</p>
-		<img src="images/port_img_1.jpg" class="port_img">
-		<p class="port_desc">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin posuere lacus, eget hendrerit magna posuere in. Duis sapien urna, facilisis quis tortor et, hendrerit sollicitudin quam. Suspendisse ligula nisi, feugiat ut vehicula at, pulvinar eget felis. Ut ut orci vel urna sodales lacinia eu eget tortor. Aenean orci nulla, consequat eget hendrerit a, placerat quis magna. Aenean quis dolor eu metus porttitor euismod sit amet sed nibh. Etiam in libero at sem ultricies vestibulum. Nullam ut lobortis nulla. Morbi scelerisque enim nec condimentum ultrices. Morbi quis maximus dolor. Maecenas semper felis placerat massa suscipit mollis. Fusce orci nisl, dictum vitae pellentesque sit amet, vehicula ac ante. Donec vel nibh luctus, hendrerit ante eget, lobortis nunc. Sed sodales ullamcorper porta. In porttitor sodales metus, vitae porttitor magna ultricies vitae.
-		</p>
+<div class="portfolio">
+	<div class="port_button" id="nsButton" onclick="changeToNS()">
+		<p>Network Security</p>
 	</div>
-	<div class="portfolio_item">
-		<p class="port_title">Portfolio Item #2</p>
-		<img src="images/port_img_2.jpg" class="port_img">
-		<p class="port_desc">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sollicitudin posuere lacus, eget hendrerit magna posuere in. Duis sapien urna, facilisis quis tortor et, hendrerit sollicitudin quam. Suspendisse ligula nisi, feugiat ut vehicula at, pulvinar eget felis. Ut ut orci vel urna sodales lacinia eu eget tortor. Aenean orci nulla, consequat eget hendrerit a, placerat quis magna. Aenean quis dolor eu metus porttitor euismod sit amet sed nibh. Etiam in libero at sem ultricies vestibulum. Nullam ut lobortis nulla. Morbi scelerisque enim nec condimentum ultrices. Morbi quis maximus dolor. Maecenas semper felis placerat massa suscipit mollis. Fusce orci nisl, dictum vitae pellentesque sit amet, vehicula ac ante. Donec vel nibh luctus, hendrerit ante eget, lobortis nunc. Sed sodales ullamcorper porta. In porttitor sodales metus, vitae porttitor magna ultricies vitae.
-		</p>
+	<div class="port_button" id="csButton" onclick="changeToCS()">
+		<p>Computer Science</p>
+	</div>
+	<div id="nsContent">
+		<div class="portfolio_item">
+			<p class="port_title">Vulnerable Environment</p>
+			<img src="images/Coming-Soon-Image.jpg" class="port_img">
+			<p class="port_desc">
+				A virtual environment made to look like one used by a small company, but extremely vulnerable to things like EternalBlue and Drupalgeddon2.
+                This environment contains over 10 virtual machines and more within an ESXi host, all of which are fully functioning and set up for semi-realism.
+                Furthermore, the environment also includes a <a href="https://github.com/scoringengine/scoringengine">scoring engine</a> which scores most of the
+                important services located on the machines.
+			</p>
+		</div>
+		<div class="portfolio_item">
+			<p class="port_title">Simple Log Parser</p>
+			<img src="images/Coming-Soon-Image.jpg" class="port_img">
+			<p class="port_desc">
+				A simple command-line program which will parse through any log file and display a summary of all the information in the end. This information
+				will vary depending on the type of log file specified, though will include the number of lines in the log file, the time frame of all the logs,
+				the average amount of logs in time frames (can be specified in the settings), and more!
+			</p>
+		</div>
+	</div>
+	<div id="csContent">
+		<div class="portfolio_item">
+			<p class="port_title">All-In-One</p>
+			<img src="images/Coming-Soon-Image.jpg" class="port_img">
+			<p class="port_desc">
+				A web-based program that encompasses everything that you may use on a daily basis into one giant thing.
+			</p>
+		</div>
+		<div class="portfolio_item">
+			<p class="port_title">Winter-Themed Hangman</p>
+			<img src="images/Coming-Soon-Image.jpg" class="port_img">
+			<p class="port_desc">
+				A GUI-based hangman game built in C# that anyone can play. The words for this game, and everything else, will be fully winter-themed and pull from a source
+                which can easily be added to.
+			</p>
+		</div>
 	</div>
 </div>
 <div class="footer">
