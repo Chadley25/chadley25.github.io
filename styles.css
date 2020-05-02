@@ -15,6 +15,7 @@
 		background-attachment: fixed;
 		background-position: center center;
 		background-size: cover;
+		
 	}
 /* Header Styles */
 	.header {
@@ -69,12 +70,16 @@
 	.about img.pfp {
 		float: left;
 		height: 95px;
-        margin: 12px 15px 10px 10px;
+		width: 100px;
+        margin: 12px 15px 10px 0px;
 	}
 	.about p {
 		line-height: 2.5;
 		text-align: justify;
-    }
+	}
+	#webWorkOnNote {
+		margin: 3% 0 0 0;
+	}
 /* Portfolio Styles */
 	.portfolio {
 		width: 88%;
@@ -82,6 +87,21 @@
 		padding: 2%;
 		background-color: #ffffff;
 		box-shadow: 0 0 10px 0 #000000;
+	}
+	.portfolio .port_button {
+		width: 40%;
+		text-align: center;
+		background-color: #333333;
+		color: white;
+		padding: 3% 0 3% 0;
+		border-radius: 30px;
+		display: inline-block;
+		margin: 5% 4.8% 5% 4.8%;
+		transition: .7s;
+	}
+	.portfolio .port_button:hover {
+		cursor: pointer;
+		background-color: #30d19b;
 	}
 	.portfolio .portfolio_item {
 		width: 60%;
@@ -101,6 +121,12 @@
 		width: 95%;
 		text-align: justify;
 		margin: 20px auto 0 auto;
+	}
+	.portfolio #nsContent {
+		display: block;
+	}
+	.portfolio #csContent {
+		display: none;
 	}
 /* H@xc0rd Styles */
 	.haxcord {
@@ -307,25 +333,6 @@
 		width: 13px;
 	}
 /* Mobile Styles */
-	@media only screen and (max-width: 1200px) {
-		.threecolumn-column1 {
-			width: 42%;
-			margin: 2%;
-			padding: 2%;
-		}
-		.threecolumn-column2 {
-			width: 42%;
-			margin: 2%;
-			padding: 2%;	
-		}
-		.threecolumn-column3 {
-			width: 92%;
-			margin: 2%;
-			padding: 2%;
-			float: none;
-			clear: both;
-		}
-	}
 	@media only screen and (max-width: 900px) {
 		.header .header-right {
 			position: relative;
@@ -349,39 +356,21 @@
   			font-size: 16px;
 			padding: 0 7px 0 0;
 		}
-		.twocolumn-column1 {
-			width: 92%;
-			margin: 2%;
-			padding: 2%;
-			float: none;
-			clear: both;
-		}
-		.twocolumn-column2 {
-			width: 92%;
-			margin: 2%;
-			padding: 2%;
-			float: none;
-			clear: both;
-		}
-		.threecolumn-column1 {
-			width: 92%;
-			margin: 2%;
-			padding: 2%;
-			float: none;
-			clear: both;
-		}
-		.threecolumn-column2 {
-			width: 92%;
-			margin: 2%;
-			padding: 2%;
-			float: none;
-			clear: both;
-		}
 		.footer .section1 .up-arrow {
 			display: none;
 		}
 		.footer .section1 .up-arrow-bg {
 			display: none;
+		}
+		.portfolio .port_button {
+			width: 60%;
+			text-align: center;
+			background-color: #333333;
+			color: white;
+			padding: 3% 0 3% 0;
+			border-radius: 30px;
+			display: block;
+			margin: 5% 20% 5% 20%;
 		}
 	}
 	@media only screen and (max-width: 550px) {
