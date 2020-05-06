@@ -13,15 +13,15 @@
         	return false;
     	});
 		$("#nsButton").click(function(){
-			$("#nsButton").css("border-radius", "0px")
-			$("#csButton").css("border-radius", "30px")
+			$("#nsButton").css("border-radius", "0px").css("box-shadow", "0 5px 15px black");
+			$("#csButton").css("border-radius", "30px").css("box-shadow", "0 0px 0px black")
 			$("#csContent").fadeOut(function() {
 				$("#nsContent").fadeIn();
 			});
 	  	});
 		$("#csButton").click(function(){
-			$("#nsButton").css("border-radius", "30px")
-			$("#csButton").css("border-radius", "0px")
+			$("#nsButton").css("border-radius", "30px").css("box-shadow", "0 0px 0px black")
+			$("#csButton").css("border-radius", "0px").css("box-shadow", "0 5px 15px black")
 			$("#nsContent").fadeOut(function() {
 				$("#csContent").fadeIn();
 			});
