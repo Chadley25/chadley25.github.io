@@ -158,6 +158,7 @@
 		display: block;
 		margin: 0 auto 1% auto;
 		width: 200px;
+		transition: .7s;
 	}
 	.haxcord .hax_desc {
 		text-align: justify;
