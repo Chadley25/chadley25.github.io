@@ -1,41 +1,39 @@
+<!doctype html>
 <html>
 <head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 <style>
-h1, h3 {
-  color: #000000;
-  margin: 12px;
-}
-body {
-  background-color: #f0f0f0;
-}
-#button {
-  margin: 10px;
-  font-family: "Arial Black", Gadget, sans-serif;
-  font-size: 15px;
-  padding: 15px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: 0.5s;
-  background-size: 200% auto;
-  color: #FFF;
-  box-shadow: 0 0 20px #eee;
-  border-radius: 5px;
-  width: 150px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.5s cubic-bezier(.25,.8,.25,1);
-  cursor: pointer;
-  display: inline-block;
-  border-radius: 25px;
-  background-image: linear-gradient(to right, #57ffc4 0%, #00d2ff 51%, #57ffc4 100%)
-}
-#button:hover {
-  background-position: right center;
-}
+  body {
+    background-color: #e6fffb;
+  }
+  #container {
+    width: 160px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  #container #jokeText {
+    text-align: justify;
+  }
+  #container a {
+    color: #333333;
+    display: inline-block;
+    text-decoration: none;
+    margin: 7px 0 0 0;
+  }
+  #container a:hover {
+    text-decoration: underline;
+  }
 </style>
 </head>
 <body>
-  <h1>404, File Not Found<h1>
-  <h3>looks like that code that looked useless actually wasn't...</h3>
-  <a href="index.html"><div id="button">Back to the Homepage</div></a>
+<div id="container">
+  <h1>404</h1>
+  <p style="font-weight:bold;">File not found</p>
+  <p id="jokeText">looks like that code that looked useless actually wasn't...</p>
+  <hr>
+  <a href="https://www.githubstatus.com/" target="_blank">Github Pages Status</a>
+  <a href="index.html">Back to Homepage</a>
+</div>
 </body>
 </html>
