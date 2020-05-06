@@ -15,7 +15,6 @@
 		background-attachment: fixed;
 		background-position: center center;
 		background-size: cover;
-		
 	}
 /* Header Styles */
 	.header {
@@ -66,6 +65,7 @@
 		padding: 2%;
 		background-color: #ffffff;
 		box-shadow: 0 0 10px 0 #000000;
+		transition: .7s;
 	}
 	.about img.pfp {
 		float: left;
@@ -140,16 +140,19 @@
 		padding: 2%;
 		background-color: #ffffff;
 		box-shadow: 0 0 10px 0 #000000;
+		transition: .7s;
 	}
 	.haxcord .hax_title {
 		text-align: center;
 		font-weight: bold;
 		font-size: 70px;
+		transition: .7s;
 	}
 	.haxcord .hax_subtitle {
 		text-align: center;
 		font-size: 25px;
 		margin: 0 0 1% 0;
+		transition: .7s;
 	}
 	.haxcord .hax_logo {
 		display: block;
@@ -404,5 +407,9 @@
 		}
 		.about p {
 			text-align: left;
+		}
+		.haxcord, .about {
+			width: 85%;
+			margin: 4% 5.5%;
 		}
 	}
