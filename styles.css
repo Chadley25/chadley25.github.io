@@ -97,6 +97,7 @@
 		border-radius: 30px;
 		display: inline-block;
 		margin: 5% 4.8% 5% 4.8%;
+		transition: .7s;
 	}
 	.portfolio .port_button:hover {
 		cursor: pointer;
