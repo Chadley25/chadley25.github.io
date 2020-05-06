@@ -97,7 +97,6 @@
 		border-radius: 30px;
 		display: inline-block;
 		margin: 5% 4.8% 5% 4.8%;
-		transition: .7s;
 	}
 	.portfolio .port_button:hover {
 		cursor: pointer;
@@ -106,6 +105,7 @@
 	.portfolio .portfolio_item {
 		width: 60%;
 		margin: 50px auto 90px auto;
+		transition: .7s;
 	}
 	.portfolio .port_title {
 		text-align: center;
@@ -121,6 +121,9 @@
 		width: 95%;
 		text-align: justify;
 		margin: 20px auto 0 auto;
+	}
+	.portfolio #nsButton {
+		border-radius: 0px;
 	}
 	.portfolio #nsContent {
 		display: block;
@@ -199,11 +202,12 @@
 		padding: 2%;
 		background-color: #ffffff;
 		box-shadow: 0 0 10px 0 #000000;
+		transition: .7s;
 	}
 	.contact .title {
 		color: #000000;
 		font-size: 40px;
-		margin: 15px 0 100px 0;
+		margin: 15px 0 50px 0;
 		text-align: center;
 	}
 	.contact input {
@@ -354,7 +358,7 @@
 		.header .header-right a {
 			transition: none;
   			font-size: 16px;
-			padding: 0 7px 0 0;
+			margin: 0 15px 0 0;
 		}
 		.footer .section1 .up-arrow {
 			display: none;
@@ -364,13 +368,22 @@
 		}
 		.portfolio .port_button {
 			width: 60%;
-			text-align: center;
-			background-color: #333333;
-			color: white;
-			padding: 3% 0 3% 0;
-			border-radius: 30px;
 			display: block;
 			margin: 5% 20% 5% 20%;
+		}
+	}
+	@media only screen and (max-width: 750px) {
+		.contact {
+			width: 80%;
+			margin: 4% 8%;
+		}
+		.portfolio .portfolio_item {
+			width: 90%;
+		}
+		.portfolio .port_button {
+			width: 70%;
+			margin: 5% 15% 5% 15%;
+			padding: 3% 0 3% 0;
 		}
 	}
 	@media only screen and (max-width: 550px) {
@@ -386,5 +399,8 @@
 			display: block;
 			margin: 0 auto 1% auto;
 			width: 100px;
+		}
+		.about p {
+			text-align: left;
 		}
 	}
