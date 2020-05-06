@@ -15,14 +15,16 @@
 		$("#nsButton").click(function(){
 			$("#nsButton").css("border-radius", "0px")
 			$("#csButton").css("border-radius", "30px")
-			$("#nsContent").show(2500)
-			$("#csContent").hide(2500)
+			$("#csContent").fadeOut(function() {
+				$("#nsContent").fadeIn();
+			});
 	  	});
 		$("#csButton").click(function(){
 			$("#nsButton").css("border-radius", "30px")
 			$("#csButton").css("border-radius", "0px")
-			$("#nsContent").hide(2500)
-			$("#csContent").show(2500)
+			$("#nsContent").fadeOut(function() {
+				$("#csContent").fadeIn();
+			});
 	  	});
 	});
 </script>
