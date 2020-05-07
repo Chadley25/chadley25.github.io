@@ -93,11 +93,18 @@
 		text-align: center;
 		background-color: #333333;
 		color: white;
-		padding: 3% 0 3% 0;
+		padding: 3% 0px;
 		border-radius: 30px;
 		display: inline-block;
-		margin: 5% 4.8% 5% 4.8%;
 		transition: .7s;
+	}
+	#nsButton {
+		margin: 5% 0 10% 5%;
+		float: left;
+	}
+	#csButton {
+		margin: 5% 5% 10% 0;
+		float: right;
 	}
 	.portfolio .port_button:hover {
 		cursor: pointer;
@@ -107,6 +114,7 @@
 		width: 60%;
 		margin: 50px auto 90px auto;
 		transition: .7s;
+		clear: both;
 	}
 	.portfolio .port_title {
 		text-align: center;
@@ -374,8 +382,15 @@
 		}
 		.portfolio .port_button {
 			width: 60%;
-			display: block;
+			transition: none;
+		}
+		#nsButton {
 			margin: 5% 20% 5% 20%;
+			float: none;
+		}
+		#csButton {
+			margin: 0% 20% 0% 20%;
+			float: none;
 		}
 	}
 	@media only screen and (max-width: 750px) {
