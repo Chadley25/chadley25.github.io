@@ -43,16 +43,20 @@
 	</div>
 </div>
 <div class="contact">
-	<p class="title">Contact Me!</p>
-	<p class="input_text">Name</p>
-	<input type="text" class="myInput"></input>
-	<p class="input_text">Email Address</p>
-	<input type="email"></input>
-	<p class="input_text">Message</p>
-	<textarea rows="5" placeholder="Enter message here..." maxlength="250"></textarea>
-	<button onclick="submitForm()">Submit</button>
-	<p id="form_submit_true">Form Successfully Submitted!</p>
-</div>
+	<form action="contactform.php" method="post">
+		<p class="title">Contact Me!</p>
+		<p class="input_text">Name</p>
+		<input type="text" name="name"></input>
+		<p class="input_text">Email Address</p>
+		<input type="email" name="mail"></input>
+		<p class="input_text">Subject</p>
+		<input type="text" name="subject"></input>
+		<p class="input_text">Message</p>
+		<textarea rows="5" placeholder="Enter message here..." maxlength="250" name="message"></textarea>
+		<button type="submit" name="submit">Submit</button>
+		<p id="form_submit_true">Form Successfully Submitted!</p>
+	</form>
+	</div>
 <div class="footer">
 	<div class="section1">
 		<img class="up-arrow-bg" src="images/Up-Arrow-BG.png" alt="Up Arrow Background">
