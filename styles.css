@@ -24,6 +24,7 @@
 		position: relative;
 		display: table;
 		box-shadow: 0px 1px 20px -2px #000000;
+		line-height: 40px;
 	}
 	.header p.title {
 		float: left;
@@ -314,7 +315,7 @@
 	.footer .section2 {
 		background-color: #30d19b;
 		width: 94%;
-		padding: 3%;
+		padding: 3.5% 3% 3% 3%;
 		box-shadow: 0px -1px 20px -2px #000000;
 	}
 	.footer .section2 .website-slogan {
@@ -352,6 +353,9 @@
 	}
 /* Mobile Styles */
 	@media only screen and (max-width: 900px) {
+		.header {
+			line-height: normal;
+		}
 		.header .header-right {
 			position: relative;
 			float: none;
@@ -402,9 +406,14 @@
 			width: 90%;
 		}
 		.portfolio .port_button {
-			width: 70%;
-			margin: 5% 15% 5% 15%;
-			padding: 3% 0 3% 0;
+			width: 75%;
+			padding: 3% 0px;
+		}
+		#nsButton {
+			margin: 5% 12.5% 5% 12.5%;
+		}
+		#csButton {
+			margin: 0 12.5%;
 		}
 	}
 	@media only screen and (max-width: 550px) {
