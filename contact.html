@@ -43,20 +43,20 @@
 	</div>
 </div>
 <div class="contact">
-	<form action="contactform.php" method="post">
+	<form action="https://formspree.io/xknqnykg" target="_blank" method="POST">
 		<p class="title">Contact Me!</p>
 		<p class="input_text">Name</p>
 		<input type="text" name="name"></input>
 		<p class="input_text">Email Address</p>
-		<input type="email" name="mail"></input>
+		<input type="email" name="_replyto"></input>
 		<p class="input_text">Subject</p>
 		<input type="text" name="subject"></input>
 		<p class="input_text">Message</p>
 		<textarea rows="5" placeholder="Enter message here..." maxlength="250" name="message"></textarea>
-		<button type="submit" name="submit">Submit</button>
-		<p id="form_submit_true">Form Successfully Submitted!</p>
+		<input type="text" name="_gotcha" style="display:none" />
+		<button type="submit">Send</button>
 	</form>
-	</div>
+</div>
 <div class="footer">
 	<div class="section1">
 		<img class="up-arrow-bg" src="images/Up-Arrow-BG.png" alt="Up Arrow Background">
