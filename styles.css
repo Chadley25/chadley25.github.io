@@ -22,6 +22,9 @@
 		display: inline-block;
 		border-bottom: 1px dotted black;
 	}
+	.download_button:hover {
+		border-bottom: 1px solid black;
+	}
 	.download_button a {
 		text-decoration: none;
 		color: black;
@@ -210,14 +213,50 @@
 		text-align: justify;
 	}
 /* Objective Styles */
-.objectives {
-	width: 60%;
-	margin: 4% 18%;
-	padding: 2%;
-	background-color: #ffffff;
-	box-shadow: 0 0 10px 0 #000000;
-	transition: .7s;
-}
+	.objectives {
+		width: 60%;
+		margin: 4% 18%;
+		padding: 2% 2% 3% 2%;
+		background-color: #ffffff;
+		box-shadow: 0 0 10px 0 #000000;
+		transition: .5s;
+	}
+	.objectives .dropdownBtn {
+		width: 90%;
+		margin: 2% 5% 0 5%;
+		padding: 1% 0;
+		background-color: #333333;
+		text-align: center;
+		font-size: 27px;
+		color: white;
+		font-weight: bold;
+		transition: .5s;
+	}
+	.objectives .dropdownBtn:hover {
+		cursor: pointer;
+		color: #30d19b;
+	}
+	.dropdownContent {
+		display: none;
+		z-index: 1;
+		width: 88%;
+		margin: 0 5% 1% 5%;
+		padding: 0 1% 0 1%;
+		background-color: lightgray;
+	}
+	.dropdownContentDisplay {
+		display: block;
+	}
+	.objectiveSection {
+		padding: 5%;
+	}
+	.objectiveSection .objectiveTitle {
+		font-size: 23px;
+		font-weight: bold;
+	}
+	.objectiveSection .objectiveDesc {
+		margin: 7px 0 0 0;
+	}
 /* Contact Styles */
 	.contact {
 		width: 40%;
