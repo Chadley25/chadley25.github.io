@@ -3,7 +3,7 @@
 
 /* Color Theme Used: https://coolors.co/30d19b-0c0f0a-ffffff-333333-dad6d6 */
 
-/* Main Styles */
+/* Global Styles */
 	* {
 		margin: 0;
 		padding: 0;
@@ -71,7 +71,7 @@
 	.header p.title {
 		float: left;
 		font-size: 40px;
-		margin: 0 0 7px 15px;
+		margin: 7px 0 7px 15px;
 		font-weight: bold;
 		color: white;
 	}
@@ -127,28 +127,6 @@
 		padding: 2%;
 		background-color: #ffffff;
 		box-shadow: 0 0 10px 0 #000000;
-	}
-	.portfolio .port_button {
-		width: 40%;
-		text-align: center;
-		background-color: #333333;
-		color: white;
-		padding: 3% 0px;
-		border-radius: 30px;
-		display: inline-block;
-		transition: .7s;
-	}
-	#nsButton {
-		margin: 5% 0 10% 5%;
-		float: left;
-	}
-	#csButton {
-		margin: 5% 5% 10% 0;
-		float: right;
-	}
-	.portfolio .port_button:hover {
-		cursor: pointer;
-		background-color: #30d19b;
 	}
 	.portfolio .portfolio_item {
 		width: 60%;
@@ -222,9 +200,9 @@
 		transition: .5s;
 	}
 	.objectives .dropdownBtn {
-		width: 90%;
+		width: 86%;
 		margin: 2% 5% 0% 5%;
-		padding: 1% 0 1.7% 0;
+		padding: 1.7% 2% 1.7% 2%;
 		background-color: #333333;
 		text-align: center;
 		font-size: 27px;
@@ -425,7 +403,7 @@
 		.header .header-right a {
 			transition: none;
   			font-size: 16px;
-			margin: 0 15px 0 0;
+			margin: 0 7.5px 0 7.5px;
 		}
 		.footer .section1 .up-arrow {
 			display: none;
@@ -470,6 +448,12 @@
 		.objectives .dropdownBtn {
 			font-size: 20px;
 		}
+		.objectiveSection .objectiveTitle {
+			font-size: 17px;
+		}
+		.objectiveSection .objectiveDesc {
+			font-size: 13px;
+		}
 	}
 	@media only screen and (max-width: 750px) {
 		.contact {
@@ -488,9 +472,6 @@
 		}
 		#csButton {
 			margin: 0 12.5%;
-		}
-		.objectives .dropdownBtn {
-			font-size: 15px;
 		}
 	}
 	@media only screen and (max-width: 550px) {
@@ -513,8 +494,5 @@
 		.haxcord, .about, .objectives {
 			width: 85%;
 			margin: 4% 5.5%;
-		}
-		.objectives .dropdownBtn {
-			font-size: 13px;
 		}
 	}
