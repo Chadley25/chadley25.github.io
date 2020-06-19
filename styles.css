@@ -58,6 +58,16 @@
 	.download_button:hover {
 		cursor: pointer;
 	}
+	.page_title {
+		color: #000000;
+		font-size: 40px;
+		border-bottom: 4px solid black;
+		display: inline-block;
+	}
+	.page_title_cont {
+		text-align: center;
+		margin: 20px 0 50px 0;
+	}
 /* Header Styles */
 	.header {
 		width: 98%;
@@ -97,10 +107,6 @@
 	.header .header-right a.active {
 		color: #000000;
 	}
-/* Main Content Styles */
-	.middle_spacing {
-		height: 600px;
-	}
 /* About Styles */
 	.about {
 		width: 70%;
@@ -122,8 +128,8 @@
 	}
 /* Portfolio Styles */
 	.portfolio {
-		width: 88%;
-		margin: 4%;
+		width: 70%;
+		margin: 4% 13%;
 		padding: 2%;
 		background-color: #ffffff;
 		box-shadow: 0 0 10px 0 #000000;
@@ -150,48 +156,8 @@
 		text-align: justify;
 		margin: 20px auto 0 auto;
 	}
-	.portfolio #nsButton {
-		border-radius: 0px;
-		box-shadow: 0 5px 15px black;
-	}
-	.portfolio #nsContent {
-		display: block;
-	}
-	.portfolio #csContent {
-		display: none;
-	}
-/* H@xc0rd Styles */
-	.haxcord {
-		width: 70%;
-		margin: 4% 13%;
-		padding: 2%;
-		background-color: #ffffff;
-		box-shadow: 0 0 10px 0 #000000;
-		transition: .7s;
-	}
-	.haxcord .hax_title {
-		text-align: center;
-		font-weight: bold;
-		font-size: 70px;
-		transition: .7s;
-	}
-	.haxcord .hax_subtitle {
-		text-align: center;
-		font-size: 25px;
-		margin: 0 0 1% 0;
-		transition: .7s;
-	}
-	.haxcord .hax_logo {
-		display: block;
-		margin: 0 auto 1% auto;
-		width: 200px;
-		transition: .7s;
-	}
-	.haxcord .hax_desc {
-		text-align: justify;
-	}
-/* Objective Styles */
-	.objectives {
+/* SIP Styles */
+	.sip {
 		width: 60%;
 		margin: 4% 18%;
 		padding: 2% 2% 4% 2%;
@@ -199,7 +165,7 @@
 		box-shadow: 0 0 10px 0 #000000;
 		transition: .5s;
 	}
-	.objectives .dropdownBtn {
+	.sip .dropdownBtn {
 		width: 86%;
 		margin: 2% 5% 0% 5%;
 		padding: 1.7% 2% 1.7% 2%;
@@ -210,11 +176,11 @@
 		font-weight: bold;
 		transition: .5s;
 	}
-	.objectives .dropdownBtn:hover {
+	.sip .dropdownBtn:hover {
 		cursor: pointer;
 		color: #30d19b;
 	}
-	.dropdownContent {
+	.sip .dropdownContent {
 		display: none;
 		z-index: 1;
 		width: 88%;
@@ -222,18 +188,39 @@
 		padding: 0 1% 0 1%;
 		background-color: lightgray;
 	}
-	.dropdownContentDisplay {
+	.sip .dropdownContentDisplay {
 		display: block;
 	}
-	.objectiveSection {
+	.sip .objectiveSection,.sectionContent {
 		padding: 5%;
 	}
-	.objectiveSection .objectiveTitle {
+	.sip .objectiveSection .objectiveTitle {
 		font-size: 23px;
 		font-weight: bold;
 	}
-	.objectiveSection .objectiveDesc {
+	.sip .objectiveSection .objectiveDesc {
 		margin: 7px 0 0 0;
+	}
+	.hax_title {
+		text-align: center;
+		font-weight: bold;
+		font-size: 70px;
+		transition: .7s;
+	}
+	.hax_subtitle {
+		text-align: center;
+		font-size: 25px;
+		margin: 0 0 1% 0;
+		transition: .7s;
+	}
+	.hax_logo {
+		display: block;
+		margin: 0 auto 1% auto;
+		width: 200px;
+		transition: .7s;
+	}
+	.hax_desc {
+		text-align: justify;
 	}
 /* Contact Styles */
 	.contact {
@@ -265,12 +252,6 @@
 	.contact button {
 		display: block;
 		margin: 30px 0 0 0;
-	}
-	#form_submit_true {
-		transition: 2s;
-		margin: 20px 0 0 0;
-		color: green;
-		display: none;
 	}
 /* Footer Styles */
 	.footer {
@@ -328,13 +309,13 @@
 	.footer .links a:hover {
 		text-decoration: underline;
 	}
-	.logo {
+	.footer .logo {
 		width: 50px;
 		height: 50px;
 		padding: 0 7px;
 		transition: .5s;
 	}
-	.logo:hover {
+	.footer .logo:hover {
 		transition: .5s;
 		transform: scale(1.3);
 	}
@@ -475,15 +456,15 @@
 		}
 	}
 	@media only screen and (max-width: 550px) {
-		.haxcord .hax_title {
+		.hax_title {
 			font-size: 40px;
 		}
-		.haxcord .hax_subtitle {
+		.hax_subtitle {
 			text-align: center;
 			font-size: 20px;
 			margin: 0 0 1% 0;
 		}
-		.haxcord .hax_logo {
+		.hax_logo {
 			display: block;
 			margin: 0 auto 1% auto;
 			width: 100px;
@@ -491,7 +472,7 @@
 		.about p {
 			text-align: left;
 		}
-		.haxcord, .about, .objectives {
+		.about, .objectives {
 			width: 85%;
 			margin: 4% 5.5%;
 		}
