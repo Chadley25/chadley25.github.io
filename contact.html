@@ -14,21 +14,6 @@
         	return false;
     	});
 	});
-	function submitForm() {
-		var elements = document.getElementsByTagName("input");
-		for (var ii=0; ii < elements.length; ii++) {
-			elements[ii].value = "";
-		}
-		var elements = document.getElementsByTagName("textarea");
-		for (var ii=0; ii < elements.length; ii++) {
-			elements[ii].value = "";
-		}
-		document.getElementById("form_submit_true").style.display = "block";
-		setTimeout(removeSubmitTrueText, 9000);
-	}
-	function removeSubmitTrueText() {
-		document.getElementById("form_submit_true").style.display = "none";
-	}
 </script>
 </head>
 
@@ -38,14 +23,13 @@
 	<div class="header-right">
 		<a href="index.html">Main</a>
 		<a href="portfolio.html">Portfolio</a>
-		<a href="h@xc0rd.html">H@xc0rd</a>
-		<a href="objectives.html">Objectives</a>
+		<a href="sip.html">SIP</a>
 		<a href="contact.html" class="active">Contact</a>
 	</div>
 </div>
 <div class="contact">
 	<form action="https://formspree.io/xknqnykg" target="_blank" method="POST">
-		<p class="title">Contact Me!</p>
+		<div class="page_title_cont"><p class="page_title">Contact Me!</p></div>
 		<p class="input_text">Name</p>
 		<input type="text" name="name"></input>
 		<p class="input_text">Email Address</p>
@@ -70,8 +54,7 @@
 		<div class="links">
 			<a href="index.html">Main</a>
 			<a href="portfolio.html">Portfolio</a>
-			<a href="h@xc0rd.html">H@xc0rd</a>
-			<a href="objectives.html">Objectives</a>
+			<a href="sip.html">SIP</a>
 			<a href="contact.html">Contact</a>
 		</div>
 	</div>
