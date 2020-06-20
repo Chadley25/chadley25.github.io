@@ -63,6 +63,7 @@
 		font-size: 40px;
 		border-bottom: 4px solid black;
 		display: inline-block;
+		transition: .5s;
 	}
 	.page_title_cont {
 		text-align: center;
@@ -359,7 +360,12 @@
 	::-webkit-scrollbar{
 		width: 13px;
 	}
-/* Mobile Styles */
+/* Responsive Styles */
+	@media only screen and (max-width: 1200px) {
+		.page_title {
+			font-size: 30px;
+		}
+	}
 	@media only screen and (max-width: 900px) {
 		.header {
 			line-height: normal;
@@ -396,14 +402,6 @@
 			width: 60%;
 			transition: none;
 		}
-		#nsButton {
-			margin: 5% 20% 5% 20%;
-			float: none;
-		}
-		#csButton {
-			margin: 0% 20% 0% 20%;
-			float: none;
-		}
 		.footer .section2 {
 			background-color: #30d19b;
 			width: 94%;
@@ -426,14 +424,18 @@
 			text-align: center;
 			text-transform: uppercase;
 		}
-		.objectives .dropdownBtn {
+		.sip .dropdownBtn {
 			font-size: 20px;
 		}
-		.objectiveSection .objectiveTitle {
+		.sip .objectiveSection .objectiveTitle {
 			font-size: 17px;
 		}
-		.objectiveSection .objectiveDesc {
+		.sip .objectiveSection .objectiveDesc {
 			font-size: 13px;
+		}
+		.page_title {
+			border-bottom: none;
+			text-decoration: underline;
 		}
 	}
 	@media only screen and (max-width: 750px) {
@@ -447,12 +449,6 @@
 		.portfolio .port_button {
 			width: 75%;
 			padding: 3% 0px;
-		}
-		#nsButton {
-			margin: 5% 12.5% 5% 12.5%;
-		}
-		#csButton {
-			margin: 0 12.5%;
 		}
 	}
 	@media only screen and (max-width: 550px) {
@@ -472,7 +468,7 @@
 		.about p {
 			text-align: left;
 		}
-		.about, .objectives {
+		.about, .sip {
 			width: 85%;
 			margin: 4% 5.5%;
 		}
