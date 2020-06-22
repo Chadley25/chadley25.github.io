@@ -14,6 +14,16 @@
 			$("html, body").animate({ scrollTop: 0 }, 500);
         	return false;
     	});
+		$("#slideshow > div:gt(0)").hide();
+
+		setInterval(function() {
+	  		$('#slideshow > div:first')
+	    		.fadeOut(1000)
+	    		.next()
+	    		.fadeIn(1000)
+	    		.end()
+	    		.appendTo('#slideshow');
+		}, 5000);
 	});
 </script>
 </head>
@@ -22,24 +32,28 @@
 <div class="header">
 	<p class="title">Bradley Chavis</p>
 	<div class="header-right">
-		<a href="index.html" class="active">Main</a>
+		<a href="index.html" class="active">Home</a>
+		<a href="about.html">About</a>
 		<a href="portfolio.html">Portfolio</a>
 		<a href="sip.html">SIP</a>
 		<a href="contact.html">Contact</a>
 	</div>
 </div>
-<div class="about">
-	<img src="images/portrait.jpg" class="pfp">
-	<p>
-		Hey, welcome to my portfolio website! If you couldn't already tell, my name's Bradley Chavis, and I'm currently studying in Network Security and Computer Science at UAT.
-		From my six semesters here so far, I've learned a log of things through the classes I've been in, the projects I've worked on, and the competitions I've competed in.
-		One of these competitions being CCDC (Collegiate Cyber Defense Competition), where I was one of the people in charge of managing and defending Unix machines and eCommerce applications.
-		But when all of that stuff isn't going on, I'm working on personal projects. One of these being <a href="sip.html" target="_blank">H@xc0rd</a> which I'm currently working on along with my partner, David Austad.
-		This project is a Discord bot that will allow anyone with a Discord account to use tools commonly used in the network security field. And for each of these tools, they not
-		only will come with custom-built code, allowing for any arguments to be used that normally could be used within a shell, but will also come with a help menu. Within this menu, it will display to the user a description
-		of the tool, all arguments that can be used with it, and an explanation of how you can use the data gained from the tool.
-		But that's it for everything you need to know me. Feel free to look around at everything else on my websites, and contact me if you want more information on anything.
-	</p>
+<div class="home">
+	<p class="title">Hey, welcome to my portfolio website!</p>
+	<div id="slideshow">
+		<div>
+			<img src="images/haxcord.jpg" width="100%">
+		</div>
+		<div>
+		  	<img src="images/all_in_one.jpg" width="100%">
+		</div>
+		<div>
+			<img src="images/vuln_environment.jpg" width="100%">
+		</div>
+	</div> 
+	<a href="about.html">Learn more about me &nbsp;<div class="arrow"><p>-></p></div></a>
+	<a href="portfolio.html">View more projects &nbsp;<div class="arrow"><p>-></p></div></a>
 </div>
 <div class="footer">
 	<div class="section1">
@@ -51,7 +65,8 @@
 			<a href="mailto: BradleyChavis25@gmail.com"><img src="images/Email-Logo.png" class="logo" alt="Email Logo Icon"></a>
 		</div>
 		<div class="links">
-			<a href="index.html">Main</a>
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
 			<a href="portfolio.html">Portfolio</a>
 			<a href="sip.html">SIP</a>
 			<a href="contact.html">Contact</a>
