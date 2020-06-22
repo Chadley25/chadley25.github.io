@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#000000">
+<title>Bradley Chavis</title>
+<link rel="icon" href="Tab-Icon.png">
+<link rel="stylesheet" href="styles.css" type="text/css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.up-arrow').click(function(){
+			$("html, body").animate({ scrollTop: 0 }, 500);
+        	return false;
+    	});
+	});
+</script>
+</head>
+
+<body>
+<div class="header">
+	<p class="title">Bradley Chavis</p>
+	<div class="header-right">
+		<a href="index.html">Home</a>
+		<a href="about.html" class="active">About</a>
+		<a href="portfolio.html">Portfolio</a>
+		<a href="sip.html">SIP</a>
+		<a href="contact.html">Contact</a>
+	</div>
+</div>
+<div class="about">
+	<img src="images/portrait.jpg" class="pfp">
+	<p>
+		Hey, if you couldn't already tell, my name's Bradley Chavis, and I'm currently studying in Network Security and Computer Science at UAT.
+		From my six semesters here so far, I've learned a log of things through the classes I've been in, the projects I've worked on, and the competitions I've competed in.
+		One of these competitions being CCDC (Collegiate Cyber Defense Competition), where I was one of the people in charge of managing and defending Unix machines and eCommerce applications.
+		But when all of that stuff isn't going on, I'm working on personal projects. One of these being <a href="sip.html" target="_blank">H@xc0rd</a> which I'm currently working on along with my partner, David Austad.
+		This project is a Discord bot that will allow anyone with a Discord account to use tools commonly used in the network security field. Also, I have other projects like a <a href="portfolio.html" target="_blank">vulnerable environment</a>
+		that can be fully built with an Ansible playbook, and a mobile application which will search for where you can stream or purchase a show or movie, called <a href="portfolio.html" target="_blank">Found It!</a>
+		But that's it for everything you need to know me. Feel free to look around at everything else on my websites, and contact me if you want more information on anything.
+	</p>
+</div>
+<div class="footer">
+	<div class="section1">
+		<img class="up-arrow-bg" src="images/Up-Arrow-BG.png" alt="Up Arrow Background">
+		<img class="up-arrow" src="images/Up-Arrow.png" alt="Up Arrow Icon">
+		<div class="logos">
+			<a href="https://github.com/Chadley25" target="_blank"><img src="images/Github-Logo.png" class="logo" alt="Github Logo Icon"></a>
+			<a href="https://www.linkedin.com/in/bradleychavis/" target="_blank"><img src="images/Linkedin-Logo.png" class="logo" alt="Linkedin Logo Icon"></a>
+			<a href="mailto: BradleyChavis25@gmail.com"><img src="images/Email-Logo.png" class="logo" alt="Email Logo Icon"></a>
+		</div>
+		<div class="links">
+			<a href="index.html">Home</a>
+			<a href="about.html">About</a>
+			<a href="portfolio.html">Portfolio</a>
+			<a href="sip.html">SIP</a>
+			<a href="contact.html">Contact</a>
+		</div>
+	</div>
+	<div class="section2">
+		<p class="website-slogan">BRADLEY'S PORTFOLIO & CONTACT WEBSITE</p>
+		<p class="copyright-info">&copy; BRADLEY CHAVIS, 2020 | ALL RIGHTS RESERVED</p>
+	</div>
+</div>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-163278692-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+  
+	gtag('config', 'UA-163278692-1');
+</script>
+</body>
+</html>
