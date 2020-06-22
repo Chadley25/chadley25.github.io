@@ -108,6 +108,55 @@
 	.header .header-right a.active {
 		color: #000000;
 	}
+/* Home Styles */
+	.home {
+		width: 70%;
+		margin: 4% 13%;
+		padding: 2%;
+		background-color: #ffffff;
+		box-shadow: 0 0 10px 0 #000000;
+		transition: .7s;
+	}
+	.home .title {
+		font-size: 40px;
+		font-weight: bold;
+		position: relative;
+		transition: .7s;
+	}
+	.home #slideshow {
+		margin: 30px 0 10px 0;
+		position: relative;
+		width: 928px;
+		height: 522px;
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+		transition: .5s;
+	}
+	.home #slideshow > div {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+	}
+	.home .arrow {
+		display: inline-block;
+	}
+	.home a {
+		font-size: 17px;
+		text-decoration: none;
+		color: black;
+		display: block;
+		width: 100%;
+		margin: 20px 0 0 0;
+		transition: .5s;
+	}
+	.home a:hover > .arrow {
+		animation: point 1s infinite;
+	}
+	@keyframes point {
+		50% {transform: translateX(7px); }
+		100% {transform: translateX(0px); }
+	}
 /* About Styles */
 	.about {
 		width: 70%;
@@ -361,9 +410,36 @@
 		width: 13px;
 	}
 /* Responsive Styles */
+	@media only screen and (max-width: 1335px) {
+		.home .title {
+			font-size: 30px;
+		}
+		.home #slideshow {
+			width: 800px;
+			height: 450px;
+		}
+	}
 	@media only screen and (max-width: 1200px) {
 		.page_title {
 			font-size: 30px;
+		}
+	}
+	@media only screen and (max-width: 1170px) {
+		.home .title {
+			font-size: 27px;
+		}
+		.home #slideshow {
+			width: 640px;
+			height: 360px;
+		}
+	}
+	@media only screen and (max-width: 930px) {
+		.home .title {
+			font-size: 25px;
+		}
+		.home #slideshow {
+			width: 448px;
+			height: 252px;
 		}
 	}
 	@media only screen and (max-width: 900px) {
@@ -449,6 +525,11 @@
 		.portfolio .port_button {
 			width: 75%;
 			padding: 3% 0px;
+		}
+		.home #slideshow {
+			width: 240px;
+			height: 135px;
+			margin: 30px auto 10px auto;
 		}
 	}
 	@media only screen and (max-width: 550px) {
