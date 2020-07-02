@@ -14,51 +14,20 @@
 			$("html, body").animate({ scrollTop: 0 }, 500);
         	return false;
     	});
-		$("#slideshow > div:gt(0)").hide();
-
-		setInterval(function() {
-	  		$('#slideshow > div:first')
-	    		.fadeOut(1000)
-	    		.next()
-	    		.fadeIn(1000)
-	    		.end()
-	    		.appendTo('#slideshow');
-		}, 5000);
 	});
 </script>
 </head>
 
 <body>
-<div class="header">
-	<p class="title">Bradley Chavis</p>
-	<div class="header-right">
-		<a href="index.html" class="active">Home</a>
-		<a href="about.html">About</a>
-		<a href="portfolio.html">Portfolio</a>
-		<a href="sip.html">SIP</a>
-		<a href="contact.html">Contact</a>
-	</div>
-</div>
 <div class="home">
-	<p class="title">Hey, welcome to my portfolio website!</p>
-	<div id="slideshow">
-		<div>
-			<img src="images/haxcord.jpg" width="100%">
-		</div>
-		<div>
-		  	<img src="images/all_in_one.jpg" width="100%">
-		</div>
-		<div>
-			<img src="images/vuln_environment.jpg" width="100%">
-		</div>
-	</div> 
-	<a href="about.html">Learn more about me &nbsp;<div class="arrow"><p>-></p></div></a>
-	<a href="portfolio.html">View more projects &nbsp;<div class="arrow"><p>-></p></div></a>
+	<p class="title">Bradley Chavis</p>
+	<p class="subtitle">Network Security & Computer Science</p>
+	<div class="homeNavbar">
+		<a href="about.html">About</a><a href="portfolio.html">Portfolio</a><a href="sip.html">SIP</a><a href="contact.html">Contact</a>
+	</div>
 </div>
 <div class="footer">
 	<div class="section1">
-		<img class="up-arrow-bg" src="images/Up-Arrow-BG.png" alt="Up Arrow Background">
-		<img class="up-arrow" src="images/Up-Arrow.png" alt="Up Arrow Icon">
 		<div class="logos">
 			<a href="https://github.com/Chadley25" target="_blank"><img src="images/Github-Logo.png" class="logo" alt="Github Logo Icon"></a>
 			<a href="https://www.linkedin.com/in/bradleychavis/" target="_blank"><img src="images/Linkedin-Logo.png" class="logo" alt="Linkedin Logo Icon"></a>
