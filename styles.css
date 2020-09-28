@@ -112,17 +112,10 @@
 /* Home Styles */
 	.home {
 		width: 70%;
-		margin: 4% 13%;
+		margin: 1% 13% 4% 13%;
 		padding: 2%;
-		background-color: #ffffff;
-		box-shadow: 0 0 10px 0 #000000;
+		background-color: none;
 		transition: .7s;
-	}
-	.home .title {
-		font-size: 110px;
-		font-weight: bold;
-		transition: .7s;
-		text-align: center;
 	}
 	.home #buttons {
 		width: 90%;
@@ -141,7 +134,7 @@
 	}
 	.home .button:hover {
 		cursor: pointer;
-		box-shadow: 0px 0px 5px 1px black;
+		box-shadow: 0px 0px 50px 1px black;
 	}
 	.home .button:hover .left_button {
 		width: 80%;
@@ -159,7 +152,7 @@
 		float: left;
 		z-index: 0;
 		transition: .8s;
-		box-shadow: 0px 0px 5px 1px black;
+		box-shadow: 0px 0px 50px 1px black;
 	}
 	.home .right_button {
 		width: 20%;
@@ -167,7 +160,7 @@
 		float: right;
 		z-index: -1;
 		transition: .8s;
-		box-shadow: 0px 0px 5px 1px black;
+		box-shadow: 0px 0px 50px 1px black;
 	}
 	.home .button_text {
 		font-family: "Arial";
@@ -325,14 +318,14 @@
 	}
 	.contact input {
 		margin: 0 0 2% 0;
-		width: 210px;
+		width: 280px;
 	}
 	.contact .input_text {
 		margin: 0 0 5px 0;
 	}
 	.contact textarea {
 		resize: none;
-		width: 200px;
+		width: 280px;
 		padding: 5px;
 	}
 	.contact button {
