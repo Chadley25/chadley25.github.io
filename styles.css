@@ -279,6 +279,8 @@
 	}
 	.sip .objectiveSection .objectiveDesc {
 		margin: 7px 0 0 0;
+		text-align: justify;
+
 	}
 	.hax_title {
 		text-align: center;
@@ -300,6 +302,30 @@
 	}
 	.hax_desc {
 		text-align: justify;
+	}
+	.artifactSection {
+		margin: 3% 0 0 0;
+	}
+	.artifact1 {
+		width: 45%;
+		margin: 3% 5% 0 0;
+		float: left;
+		color: black;
+		text-decoration: none;
+	}
+	.artifact2 {
+		width: 45%;
+		margin: 3% 0 0 5%;
+		float: right;
+		color: black;
+		text-decoration: none;
+	}
+	.artifactTitle {
+		font-weight: bold;
+		margin: 0 0 10px 0;
+	}
+	.artifactDesc {
+		margin: 0 0 10px 0;
 	}
 /* Contact Styles */
 	.contact {
